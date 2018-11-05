@@ -14,7 +14,7 @@
 
 ![image](/assets/images/albums.png)
 
-#### 代码
+#### [代码][2]
 
 ```python
 # 引入 os 库，用于操作 “操作系统”(windows, mac, linux)
@@ -63,3 +63,5 @@ for idx, img in enumerate(imgs):
     # 关闭文件
     f.close();
 ```
+
+[2]: https://github.com/sonatatlas/Graph-The-Rainbow/blob/master/spider/image.py

@@ -9,9 +9,9 @@
 
 #### 示例
 
-![line](/assets/images/line.png)
+![line][1]
 
-#### 代码
+#### [代码][2]
 
 ```python
 # 引入 matplotlib 库
@@ -34,3 +34,6 @@ plt.show()
 
 # 注意: 如果先展示图片后存储图片，图片会是空的。
 ```
+
+[1]: /assets/images/line.png
+[2]: https://github.com/sonatatlas/Graph-The-Rainbow/blob/master/chart/line.py

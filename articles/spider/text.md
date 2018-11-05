@@ -12,7 +12,7 @@
 #### 示例
 ![text](/assets/images/text.png)
 
-#### 代码
+#### [代码][2]
 
 ```python
 # 引入 requests 库用于网络请求
@@ -36,3 +36,5 @@ titles = html.xpath('//div[@class="sidebar-inner"]//a');
 # 打印 titles;
 for i in titles: print(i.text);
 ```
+
+[2]: https://github.com/sonatatlas/Graph-The-Rainbow/blob/master/spider/text.py
