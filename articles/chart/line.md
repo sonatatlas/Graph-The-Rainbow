@@ -11,7 +11,7 @@
 
 ![line][1]
 
-#### [代码][2]
+#### 代码
 
 ```python
 # 引入 matplotlib 库
@@ -36,4 +36,3 @@ plt.show()
 ```
 
 [1]: /assets/images/line.png
-[2]: https://github.com/sonatatlas/Graph-The-Rainbow/blob/master/chart/line.py

@@ -14,6 +14,6 @@ plt.xlabel('this is x label');
 plt.savefig('figure');
 
 # show the plt...
-plt.show()
+plt.show();
 
-# 注意: 如果先展示图片后存储图片，图片会空的。
+# 注意: 如果先展示图片后存储图片，图片会是空的。
