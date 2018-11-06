@@ -1,7 +1,7 @@
 ### 抓取特定文本
 
 #### 模块
-+ lxml ~> lxml 将 html 文本转成 xml 对象且对象执行 xpath 的功能
++ lxml ~> lxml 将 html 文本转成 xml 对象且拥有执行 xpath 的功能
 + requests ~> 网络请求库
 
 #### 思路
@@ -12,7 +12,7 @@
 #### 示例
 ![text](/assets/images/text.png)
 
-#### [代码][2]
+#### 代码
 
 ```python
 # 引入 requests 库用于网络请求
@@ -36,5 +36,6 @@ titles = html.xpath('//div[@class="sidebar-inner"]//a');
 # 打印 titles;
 for i in titles: print(i.text);
 ```
+[代码链接][2]
 
 [2]: https://github.com/sonatatlas/Graph-The-Rainbow/blob/master/spider/text.py

@@ -7,6 +7,7 @@
 #### [Chart][2]
 
 + [线图](/articles/chart/line.md)
++ [笛卡尔曲线](/articles/chart/descartes.md)
 
 [1]: https://matplotlib.org/gallery/index.html
 [2]: https://github.com/sonatatlas/Graph-The-Rainbow/blob/master/chart
