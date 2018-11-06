@@ -3,7 +3,6 @@ _os、xpath、matplotlib..._
 
 #### 概览
 
-<br>
 __Python 标准库__
 
 什么是 python 标准库？就是 python 语言自带的一些库，如我们项目中遇到的 `import os`;

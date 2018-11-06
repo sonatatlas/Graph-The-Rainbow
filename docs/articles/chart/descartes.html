@@ -262,25 +262,29 @@
 <h4 id="&#x793A;&#x4F8B;">&#x793A;&#x4F8B;</h4>
 <p><img src="../../assets/images/descartes.png" alt="descartes"></p>
 <h4 id="&#x4EE3;&#x7801;">&#x4EE3;&#x7801;</h4>
-<pre><code class="lang-python"><span class="hljs-comment"># &#x5F15;&#x5165; matplotlib &#x5E93;</span>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x5F15;&#x5165; numpy ~&gt; &#x63D0;&#x4F9B;&#x4E09;&#x89D2;&#x51FD;&#x6570;</span>
+<span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np;
+
+<span class="hljs-comment"># &#x5F15;&#x5165; matplotlib ~&gt; &#x56FE;&#x8868;&#x7ED8;&#x5236;</span>
 <span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt;
 
-<span class="hljs-comment"># &#x8F93;&#x5165;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;</span>
-plt.plot([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>]);
+<span class="hljs-comment"># &#x5728; 0 ~ 2*pi &#x95F4;&#x53D6; 1024 &#x4E2A;&#x6570;</span>
+t = np.linspace(<span class="hljs-number">0</span>, <span class="hljs-number">2</span>*np.pi, <span class="hljs-number">1024</span>);
 
-<span class="hljs-comment"># &#x8BBE;&#x7F6E; y &#x8F74;&#x6807;&#x7B7E;</span>
-plt.ylabel(<span class="hljs-string">&apos;some numbers&apos;</span>);
+<span class="hljs-comment"># x=a*(2*cos(t)-cos(2*t))</span>
+x = (<span class="hljs-number">2</span>*np.cos(t) - np.cos(<span class="hljs-number">2</span>*t))/<span class="hljs-number">2</span>;
 
-<span class="hljs-comment"># &#x8BBE;&#x7F6E; x &#x8F74;&#x6807;&#x7B7E;</span>
-plt.xlabel(<span class="hljs-string">&apos;this is x label&apos;</span>);
+<span class="hljs-comment"># y=a*(2*sin(t)-sin(2*t))</span>
+y = (<span class="hljs-number">2</span>*np.sin(t) - np.sin(<span class="hljs-number">2</span>*t));
 
-<span class="hljs-comment"># save the plt...</span>
-plt.savefig(<span class="hljs-string">&apos;figure&apos;</span>);
+<span class="hljs-comment"># &#x5728; plt &#x4E0A;&#x7ED8;&#x5236;</span>
+plt.plot(y, x, c = <span class="hljs-string">&apos;r&apos;</span>);
 
-<span class="hljs-comment"># show the plt...</span>
-plt.show()
+<span class="hljs-comment"># &#x4FDD;&#x5B58;&#x56FE;&#x7247;</span>
+plt.savefig(<span class="hljs-string">&apos;descartes.png&apos;</span>);
 
-<span class="hljs-comment"># &#x6CE8;&#x610F;: &#x5982;&#x679C;&#x5148;&#x5C55;&#x793A;&#x56FE;&#x7247;&#x540E;&#x5B58;&#x50A8;&#x56FE;&#x7247;&#xFF0C;&#x56FE;&#x7247;&#x4F1A;&#x662F;&#x7A7A;&#x7684;&#x3002;</span>
+<span class="hljs-comment"># &#x5C55;&#x793A;&#x56FE;&#x7247;</span>
+plt.show();
 </code></pre>
 <p><a href="https://github.com/sonatatlas/Graph-The-Rainbow/blob/master/chart/descartes.py" target="_blank">&#x4EE3;&#x7801;&#x94FE;&#x63A5;</a></p>
 
@@ -322,7 +326,7 @@ plt.show()
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"笛卡尔曲线","level":"1.4.2","depth":2,"previous":{"title":"线图","level":"1.4.1","depth":2,"path":"articles/chart/line.md","ref":"articles/chart/line.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"articles/chart/descartes.md","mtime":"2018-11-06T05:57:40.544Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-06T06:49:07.068Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"笛卡尔曲线","level":"1.4.2","depth":2,"previous":{"title":"线图","level":"1.4.1","depth":2,"path":"articles/chart/line.md","ref":"articles/chart/line.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"articles/chart/descartes.md","mtime":"2018-11-06T07:16:30.875Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-06T07:17:27.094Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

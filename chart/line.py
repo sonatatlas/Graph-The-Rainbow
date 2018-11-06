@@ -1,4 +1,4 @@
-# 引入 matplotlib 库
+# 引入 matplotlib 绘制图表
 import matplotlib.pyplot as plt;
 
 # 输入一个数组

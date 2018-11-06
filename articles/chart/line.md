@@ -14,7 +14,7 @@
 #### 代码
 
 ```python
-# 引入 matplotlib 库
+# 引入 matplotlib 绘制图表
 import matplotlib.pyplot as plt;
 
 # 设置 y 轴标签

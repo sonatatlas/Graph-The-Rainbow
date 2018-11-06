@@ -15,25 +15,29 @@
 #### 代码
 
 ```python
-# 引入 matplotlib 库
+# 引入 numpy ~> 提供三角函数
+import numpy as np;
+
+# 引入 matplotlib ~> 图表绘制
 import matplotlib.pyplot as plt;
 
-# 输入一个数组
-plt.plot([1, 2, 3, 4]);
+# 在 0 ~ 2*pi 间取 1024 个数
+t = np.linspace(0, 2*np.pi, 1024);
 
-# 设置 y 轴标签
-plt.ylabel('some numbers');
+# x=a*(2*cos(t)-cos(2*t))
+x = (2*np.cos(t) - np.cos(2*t))/2;
 
-# 设置 x 轴标签
-plt.xlabel('this is x label');
+# y=a*(2*sin(t)-sin(2*t))
+y = (2*np.sin(t) - np.sin(2*t));
 
-# save the plt...
-plt.savefig('figure');
+# 在 plt 上绘制
+plt.plot(y, x, c = 'r');
 
-# show the plt...
-plt.show()
+# 保存图片
+plt.savefig('descartes.png');
 
-# 注意: 如果先展示图片后存储图片，图片会是空的。
+# 展示图片
+plt.show();
 ```
 [代码链接][2]
 
