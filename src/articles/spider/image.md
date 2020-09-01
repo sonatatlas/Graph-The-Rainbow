@@ -12,7 +12,7 @@
 
 #### 示例
 
-![image](/assets/images/albums.png)
+![image](https://github.com/udtrokia/Graph-The-Rainbow/blob/master/assets/images/albums.png?raw=true)
 
 #### 代码
 

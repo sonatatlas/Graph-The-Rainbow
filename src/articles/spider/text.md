@@ -10,7 +10,7 @@
 + 打印标签
 
 #### 示例
-![text](/assets/images/text.png)
+![text](https://github.com/udtrokia/Graph-The-Rainbow/blob/master/assets/images/text.png?raw=true)
 
 #### 代码
 

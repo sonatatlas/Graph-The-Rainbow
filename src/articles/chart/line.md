@@ -36,5 +36,5 @@ plt.show()
 ```
 [代码链接][2]
 
-[1]: /assets/images/line.png
-[2]: https://github.com/sonatatlas/Graph-The-Rainbow/blob/master/chart/descartes.py
+[1]: https://github.com/udtrokia/Graph-The-Rainbow/blob/master/assets/images/line.png?raw=true
+[2]: https://github.com/udtrokia/Graph-The-Rainbow/blob/master/chart/descartes.py

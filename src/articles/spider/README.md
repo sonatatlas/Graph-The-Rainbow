@@ -1,6 +1,6 @@
 # Talkin' Hawkin'
 
-![astronaut](/assets/images/astronaut.png)
+![astronaut](https://github.com/udtrokia/Graph-The-Rainbow/blob/master/assets/images/astronaut.png?raw=true)
 _This is Major Tom to Ground Control??? Catch the Spiders from Mars._
 
 #### Spider
