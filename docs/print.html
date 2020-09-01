@@ -3,7 +3,9 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>抓取图片并保存 - Graph The Rainbow</title>
+        <title>Graph The Rainbow</title>
+        
+        <meta name="robots" content="noindex" />
         
         
 
@@ -17,23 +19,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
-        <link rel="icon" href="../../favicon.svg">
-        <link rel="shortcut icon" href="../../favicon.png">
-        <link rel="stylesheet" href="../../css/variables.css">
-        <link rel="stylesheet" href="../../css/general.css">
-        <link rel="stylesheet" href="../../css/chrome.css">
-        <link rel="stylesheet" href="../../css/print.css" media="print">
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
         
-        <link rel="stylesheet" href="../../fonts/fonts.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
         
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="../../highlight.css">
-        <link rel="stylesheet" href="../../tomorrow-night.css">
-        <link rel="stylesheet" href="../../ayu-highlight.css">
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
         
@@ -43,7 +45,7 @@
     <body>
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
-            var path_to_root = "../../";
+            var path_to_root = "";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "ayu" : "dark";
         </script>
 
@@ -89,7 +91,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="../../index.html"><strong aria-hidden="true">1.</strong> Graph The Rainbow</a></li><li class="chapter-item expanded "><a href="../../articles/modules/index.html"><strong aria-hidden="true">2.</strong> 相关库介绍</a></li><li class="chapter-item expanded "><a href="../../articles/spider/index.html"><strong aria-hidden="true">3.</strong> 爬虫</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../articles/spider/text.html"><strong aria-hidden="true">3.1.</strong> 抓取特定文本</a></li><li class="chapter-item expanded "><a href="../../articles/spider/image.html" class="active"><strong aria-hidden="true">3.2.</strong> 抓取图片并保存</a></li></ol></li><li class="chapter-item expanded "><a href="../../articles/chart/index.html"><strong aria-hidden="true">4.</strong> 图表</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../articles/chart/line.html"><strong aria-hidden="true">4.1.</strong> 线图</a></li><li class="chapter-item expanded "><a href="../../articles/chart/descartes.html"><strong aria-hidden="true">4.2.</strong> 笛卡尔曲线</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> Graph The Rainbow</a></li><li class="chapter-item expanded "><a href="articles/modules/index.html"><strong aria-hidden="true">2.</strong> 相关库介绍</a></li><li class="chapter-item expanded "><a href="articles/spider/index.html"><strong aria-hidden="true">3.</strong> 爬虫</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="articles/spider/text.html"><strong aria-hidden="true">3.1.</strong> 抓取特定文本</a></li><li class="chapter-item expanded "><a href="articles/spider/image.html"><strong aria-hidden="true">3.2.</strong> 抓取图片并保存</a></li></ol></li><li class="chapter-item expanded "><a href="articles/chart/index.html"><strong aria-hidden="true">4.</strong> 图表</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="articles/chart/line.html"><strong aria-hidden="true">4.1.</strong> 线图</a></li><li class="chapter-item expanded "><a href="articles/chart/descartes.html"><strong aria-hidden="true">4.2.</strong> 笛卡尔曲线</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -124,7 +126,7 @@
                     <h1 class="menu-title">Graph The Rainbow</h1>
 
                     <div class="right-buttons">
-                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
                         
@@ -159,22 +161,91 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h3><a class="header" href="#网页图片抓取并保存" id="网页图片抓取并保存">网页图片抓取并保存</a></h3>
+                        <h1><a class="header" href="#graph-the-rainbow" id="graph-the-rainbow">Graph The Rainbow</a></h1>
+<p><img src="/assets/images/rainbow.png" alt="graph-the-rainbow" /></p>
+<blockquote>
+<p>分爬虫和图表两块，以项目为单位进行 python 学习、<a href="https://github.com/sonatatlas/Graph-The-Rainbow">Github</a>.</p>
+</blockquote>
+<h4><a class="header" href="#目录" id="目录">目录</a></h4>
+<ul>
+<li><a href="/articles/spider/README.html">爬虫</a></li>
+<li><a href="/articles/chart/README.html">图表</a></li>
+</ul>
+<h4><a class="header" href="#contact" id="contact">Contact</a></h4>
+<p>noreply@mars.stardust</p>
+<h1><a class="header" href="#相关库介绍" id="相关库介绍">相关库介绍</a></h1>
+<p><em>os、xpath、matplotlib...</em></p>
+<h4><a class="header" href="#概览" id="概览">概览</a></h4>
+<p><strong>Python 标准库</strong></p>
+<p>什么是 python 标准库？就是 python 语言自带的一些库，如我们项目中遇到的 <code>import os</code>;</p>
+<p>python 标准库的使用方法和文档，可以到 <a href="https://docs.python.org/3.6/library/index.html">Python 官网</a> 查询。
+<br><br></p>
+<p><strong>第三方库</strong></p>
+<p><a href="https://pypi.org">第三方库</a> 就是开发者自行编写的 “库”，如项目中遇到的 requsets、matplotlib、numpy、lxml...
+<br><br></p>
+<p><strong>其他</strong> </p>
+<p>比如 lxml 中用到的 xpath 语法，属于互联网标准，可到 <a href="https://developer.mozilla.org">MDN</a> 查询;</p>
+<h1><a class="header" href="#talkin-hawkin" id="talkin-hawkin">Talkin' Hawkin'</a></h1>
+<p><img src="articles/spider//assets/images/astronaut.png" alt="astronaut" />
+<em>This is Major Tom to Ground Control??? Catch the Spiders from Mars.</em></p>
+<h4><a class="header" href="#spider" id="spider">Spider</a></h4>
+<ul>
+<li><a href="articles/spider//articles/spider/text.html">抓取特定文本</a></li>
+<li><a href="articles/spider//articles/spider/image.html">抓取图片并保存</a></li>
+</ul>
+<h3><a class="header" href="#抓取特定文本" id="抓取特定文本">抓取特定文本</a></h3>
 <h4><a class="header" href="#模块" id="模块">模块</a></h4>
 <ul>
-<li>os ~&gt; os 包含普遍的操作系统功能</li>
-<li>lxml ~&gt; lxml 将 html 文本转成 xml 对象且对象执行 xpath 的功能</li>
+<li>lxml ~&gt; lxml 将 html 文本转成 xml 对象且拥有执行 xpath 的功能</li>
 <li>requests ~&gt; 网络请求库</li>
 </ul>
 <h4><a class="header" href="#思路" id="思路">思路</a></h4>
 <ul>
 <li>获取相关网页内容</li>
+<li>筛选包含特定信息的标签</li>
+<li>打印标签</li>
+</ul>
+<h4><a class="header" href="#示例" id="示例">示例</a></h4>
+<p><img src="articles/spider//assets/images/text.png" alt="text" /></p>
+<h4><a class="header" href="#代码" id="代码">代码</a></h4>
+<pre><code class="language-python"># 引入 requests 库用于网络请求
+import requests as r; 
+
+# 引入 lxml 中的 etree 用于转换 html 格式
+from lxml import etree;
+
+# 获取网页
+res = r.get('https://bitcoin.org/zh_CN/faq#how-are-bitcoins-created');
+
+# 修改网页的编码模式
+res.encoding = 'utf-8';
+
+# 将网页格式化
+html = etree.HTML(res.text);
+
+# 抓取 titles
+titles = html.xpath('//div[@class=&quot;sidebar-inner&quot;]//a');
+
+# 打印 titles;
+for i in titles: print(i.text);
+</code></pre>
+<p><a href="https://github.com/sonatatlas/Graph-The-Rainbow/blob/master/spider/text.py">代码链接</a></p>
+<h3><a class="header" href="#网页图片抓取并保存" id="网页图片抓取并保存">网页图片抓取并保存</a></h3>
+<h4><a class="header" href="#模块-1" id="模块-1">模块</a></h4>
+<ul>
+<li>os ~&gt; os 包含普遍的操作系统功能</li>
+<li>lxml ~&gt; lxml 将 html 文本转成 xml 对象且对象执行 xpath 的功能</li>
+<li>requests ~&gt; 网络请求库</li>
+</ul>
+<h4><a class="header" href="#思路-1" id="思路-1">思路</a></h4>
+<ul>
+<li>获取相关网页内容</li>
 <li>筛选包含图片的标签并获取图片链接</li>
 <li>请求图片链接，并将返回的数据写入文件</li>
 </ul>
-<h4><a class="header" href="#示例" id="示例">示例</a></h4>
-<p><img src="/assets/images/albums.png" alt="image" /></p>
-<h4><a class="header" href="#代码" id="代码">代码</a></h4>
+<h4><a class="header" href="#示例-1" id="示例-1">示例</a></h4>
+<p><img src="articles/spider//assets/images/albums.png" alt="image" /></p>
+<h4><a class="header" href="#代码-1" id="代码-1">代码</a></h4>
 <pre><code class="language-python"># 引入 os 库，用于操作 “操作系统”(windows, mac, linux)
 import os;
 
@@ -222,21 +293,94 @@ for idx, img in enumerate(imgs):
     f.close();
 </code></pre>
 <p><a href="https://github.com/sonatatlas/Graph-The-Rainbow/blob/master/spider/image.py">代码链接</a></p>
+<h1><a class="header" href="#keep-talkin" id="keep-talkin">Keep Talkin'</a></h1>
+<p><img src="articles/chart//assets/images/matplotlib.png" alt="matplotlib" /></p>
+<p>以 <a href="https://matplotlib.org/gallery/index.html">matplotlib</a> 的案例为例，尝试各种类型图表的绘制</p>
+<h4><a class="header" href="#chart" id="chart">Chart</a></h4>
+<ul>
+<li><a href="articles/chart//articles/chart/line.html">线图</a></li>
+<li><a href="articles/chart//articles/chart/descartes.html">笛卡尔曲线</a></li>
+</ul>
+<h3><a class="header" href="#网页图片抓取并保存-1" id="网页图片抓取并保存-1">网页图片抓取并保存</a></h3>
+<h4><a class="header" href="#模块-2" id="模块-2">模块</a></h4>
+<ul>
+<li>matplotlib ~&gt; 著名的绘图库</li>
+</ul>
+<h4><a class="header" href="#思路-2" id="思路-2">思路</a></h4>
+<ul>
+<li>输入图表数据</li>
+<li>保存并显示图标</li>
+</ul>
+<h4><a class="header" href="#示例-2" id="示例-2">示例</a></h4>
+<p><img src="articles/chart//assets/images/line.png" alt="line" /></p>
+<h4><a class="header" href="#代码-2" id="代码-2">代码</a></h4>
+<pre><code class="language-python"># 引入 matplotlib 绘制图表
+import matplotlib.pyplot as plt;
+
+# 设置 y 轴标签
+plt.ylabel('some numbers');
+
+# 设置 x 轴标签
+plt.xlabel('this is x label');
+
+# 绘制图表
+plt.plot([1, 2, 3, 4]);
+
+# 保存图表
+plt.savefig(line);
+
+# 显示图表
+plt.show()
+
+# 注意: 如果先展示图片后存储图片，图片会是空的。
+</code></pre>
+<p><a href="https://github.com/sonatatlas/Graph-The-Rainbow/blob/master/chart/descartes.py">代码链接</a></p>
+<h3><a class="header" href="#rené-descartes" id="rené-descartes">René Descartes</a></h3>
+<h4><a class="header" href="#模块-3" id="模块-3">模块</a></h4>
+<ul>
+<li>numpy ~&gt; 一大堆数学公式</li>
+<li>matplotlib ~&gt; 著名的绘图库</li>
+</ul>
+<h4><a class="header" href="#思路-3" id="思路-3">思路</a></h4>
+<ul>
+<li>输入图表数据</li>
+<li>保存并显示图标</li>
+</ul>
+<h4><a class="header" href="#示例-3" id="示例-3">示例</a></h4>
+<p><img src="articles/chart//assets/images/descartes.png" alt="descartes" /></p>
+<h4><a class="header" href="#代码-3" id="代码-3">代码</a></h4>
+<pre><code class="language-python"># 引入 numpy ~&gt; 提供三角函数
+import numpy as np;
+
+# 引入 matplotlib ~&gt; 图表绘制
+import matplotlib.pyplot as plt;
+
+# 在 0 ~ 2*pi 间取 1024 个数
+t = np.linspace(0, 2*np.pi, 1024);
+
+# x=a*(2*cos(t)-cos(2*t))
+x = (2*np.cos(t) - np.cos(2*t))/2;
+
+# y=a*(2*sin(t)-sin(2*t))
+y = (2*np.sin(t) - np.sin(2*t));
+
+# 在 plt 上绘制
+plt.plot(y, x, c = 'r');
+
+# 保存图片
+plt.savefig('descartes.png');
+
+# 展示图片
+plt.show();
+</code></pre>
+<p><a href="https://github.com/sonatatlas/Graph-The-Rainbow/blob/master/chart/descartes.py">代码链接</a></p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
-                            <a rel="prev" href="../../articles/spider/text.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                                <i class="fa fa-angle-left"></i>
-                            </a>
-                        
 
-                        
-                            <a rel="next" href="../../articles/chart/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
                         
 
                         <div style="clear: both"></div>
@@ -246,15 +390,7 @@ for idx, img in enumerate(imgs):
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
-                    <a rel="prev" href="../../articles/spider/text.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                        <i class="fa fa-angle-left"></i>
-                    </a>
-                
 
-                
-                    <a rel="next" href="../../articles/chart/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
                 
             </nav>
 
@@ -275,18 +411,26 @@ for idx, img in enumerate(imgs):
         
 
         
-        <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
         
 
-        <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
-        <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
         
 
+        
+        
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+        
         
 
     </body>

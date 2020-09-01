@@ -1,344 +1,242 @@
-
 <!DOCTYPE HTML>
-<html lang="" >
+<html lang="en" class="sidebar-visible no-js dark">
     <head>
+        <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
+        <title>相关库介绍 - Graph The Rainbow</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>相关库介绍 · GitBook</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.3">
-        
-        
-        
-    
-    <link rel="stylesheet" href="../../gitbook/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
 
-    
-            
-                
-                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
-                
-            
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="../../fonts/fonts.css">
         
 
-    
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
 
-    
+        <!-- Custom theme stylesheets -->
         
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
 
         
-    
-    
-    <meta name="HandheldFriendly" content="true"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
-    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
-
-    
-    <link rel="next" href="../spider/" />
-    
-    
-    <link rel="prev" href="../../" />
-    
-
     </head>
     <body>
-        
-<div class="book">
-    <div class="book-summary">
-        
-            
-<div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search" />
-</div>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "ayu" : "dark";
+        </script>
 
-            
-                <nav role="navigation">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('dark')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../index.html"><strong aria-hidden="true">1.</strong> Graph The Rainbow</a></li><li class="chapter-item expanded "><a href="../../articles/modules/index.html" class="active"><strong aria-hidden="true">2.</strong> 相关库介绍</a></li><li class="chapter-item expanded "><a href="../../articles/spider/index.html"><strong aria-hidden="true">3.</strong> 爬虫</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../articles/spider/text.html"><strong aria-hidden="true">3.1.</strong> 抓取特定文本</a></li><li class="chapter-item expanded "><a href="../../articles/spider/image.html"><strong aria-hidden="true">3.2.</strong> 抓取图片并保存</a></li></ol></li><li class="chapter-item expanded "><a href="../../articles/chart/index.html"><strong aria-hidden="true">4.</strong> 图表</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../articles/chart/line.html"><strong aria-hidden="true">4.1.</strong> 线图</a></li><li class="chapter-item expanded "><a href="../../articles/chart/descartes.html"><strong aria-hidden="true">4.2.</strong> 笛卡尔曲线</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
                 
-
-
-<ul class="summary">
-    
-    
-
-    
-
-    
-        
-        
-    
-        <li class="chapter " data-level="1.1" data-path="../../">
-            
-                <a href="../../">
-            
-                    
-                    Graph The Rainbow
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter active" data-level="1.2" data-path="./">
-            
-                <a href="./">
-            
-                    
-                    相关库介绍
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3" data-path="../spider/">
-            
-                <a href="../spider/">
-            
-                    
-                    爬虫
-            
-                </a>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.3.1" data-path="../spider/text.html">
-            
-                <a href="../spider/text.html">
-            
-                    
-                    抓取特定文本
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3.2" data-path="../spider/image.html">
-            
-                <a href="../spider/image.html">
-            
-                    
-                    抓取图片并保存
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4" data-path="../chart/">
-            
-                <a href="../chart/">
-            
-                    
-                    图表
-            
-                </a>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.4.1" data-path="../chart/line.html">
-            
-                <a href="../chart/line.html">
-            
-                    
-                    线图
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4.2" data-path="../chart/descartes.html">
-            
-                <a href="../chart/descartes.html">
-            
-                    
-                    笛卡尔曲线
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-
-    
-
-    <li class="divider"></li>
-
-    <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            Published with GitBook
-        </a>
-    </li>
-</ul>
-
-
-                </nav>
-            
-        
-    </div>
-
-    <div class="book-body">
-        
-            <div class="body-inner">
-                
-                    
-
-<div class="book-header" role="navigation">
-    
-
-    <!-- Title -->
-    <h1>
-        <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >相关库介绍</a>
-    </h1>
-</div>
-
-
-
-
-                    <div class="page-wrapper" tabindex="-1" role="main">
-                        <div class="page-inner">
-                            
-<div id="book-search-results">
-    <div class="search-noresults">
-    
-                                <section class="normal markdown-section">
-                                
-                                <h1 id="&#x76F8;&#x5173;&#x5E93;&#x4ECB;&#x7ECD;">&#x76F8;&#x5173;&#x5E93;&#x4ECB;&#x7ECD;</h1>
-<p><em>os&#x3001;xpath&#x3001;matplotlib...</em></p>
-<h4 id="&#x6982;&#x89C8;">&#x6982;&#x89C8;</h4>
-<p><strong>Python &#x6807;&#x51C6;&#x5E93;</strong></p>
-<p>&#x4EC0;&#x4E48;&#x662F; python &#x6807;&#x51C6;&#x5E93;&#xFF1F;&#x5C31;&#x662F; python &#x8BED;&#x8A00;&#x81EA;&#x5E26;&#x7684;&#x4E00;&#x4E9B;&#x5E93;&#xFF0C;&#x5982;&#x6211;&#x4EEC;&#x9879;&#x76EE;&#x4E2D;&#x9047;&#x5230;&#x7684; <code>import os</code>;</p>
-<p>python &#x6807;&#x51C6;&#x5E93;&#x7684;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#x548C;&#x6587;&#x6863;&#xFF0C;&#x53EF;&#x4EE5;&#x5230; <a href="https://docs.python.org/3.6/library/index.html" target="_blank">Python &#x5B98;&#x7F51;</a> &#x67E5;&#x8BE2;&#x3002;
-<br><br></p>
-<p><strong>&#x7B2C;&#x4E09;&#x65B9;&#x5E93;</strong></p>
-<p><a href="https://pypi.org" target="_blank">&#x7B2C;&#x4E09;&#x65B9;&#x5E93;</a> &#x5C31;&#x662F;&#x5F00;&#x53D1;&#x8005;&#x81EA;&#x884C;&#x7F16;&#x5199;&#x7684; &#x201C;&#x5E93;&#x201D;&#xFF0C;&#x5982;&#x9879;&#x76EE;&#x4E2D;&#x9047;&#x5230;&#x7684; requsets&#x3001;matplotlib&#x3001;numpy&#x3001;lxml...
-<br><br></p>
-<p><strong>&#x5176;&#x4ED6;</strong> </p>
-<p>&#x6BD4;&#x5982; lxml &#x4E2D;&#x7528;&#x5230;&#x7684; xpath &#x8BED;&#x6CD5;&#xFF0C;&#x5C5E;&#x4E8E;&#x4E92;&#x8054;&#x7F51;&#x6807;&#x51C6;&#xFF0C;&#x53EF;&#x5230; <a href="https://developer.mozilla.org" target="_blank">MDN</a> &#x67E5;&#x8BE2;;</p>
-
-                                
-                                </section>
-                            
-    </div>
-    <div class="search-results">
-        <div class="has-results">
-            
-            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
-            <ul class="search-results-list"></ul>
-            
-        </div>
-        <div class="no-results">
-            
-            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
-            
-        </div>
-    </div>
-</div>
-
-                        </div>
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
                     </div>
+
+                    <h1 class="menu-title">Graph The Rainbow</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        <a href="https://github.com/udtrokia/Graph-The-Rainbow" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
                 
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#相关库介绍" id="相关库介绍">相关库介绍</a></h1>
+<p><em>os、xpath、matplotlib...</em></p>
+<h4><a class="header" href="#概览" id="概览">概览</a></h4>
+<p><strong>Python 标准库</strong></p>
+<p>什么是 python 标准库？就是 python 语言自带的一些库，如我们项目中遇到的 <code>import os</code>;</p>
+<p>python 标准库的使用方法和文档，可以到 <a href="https://docs.python.org/3.6/library/index.html">Python 官网</a> 查询。
+<br><br></p>
+<p><strong>第三方库</strong></p>
+<p><a href="https://pypi.org">第三方库</a> 就是开发者自行编写的 “库”，如项目中遇到的 requsets、matplotlib、numpy、lxml...
+<br><br></p>
+<p><strong>其他</strong> </p>
+<p>比如 lxml 中用到的 xpath 语法，属于互联网标准，可到 <a href="https://developer.mozilla.org">MDN</a> 查询;</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../../index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../../articles/spider/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
             </div>
 
-            
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
-                <a href="../../" class="navigation navigation-prev " aria-label="Previous page: Graph The Rainbow">
-                    <i class="fa fa-angle-left"></i>
-                </a>
+                    <a rel="prev" href="../../index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
                 
-                
-                <a href="../spider/" class="navigation navigation-next " aria-label="Next page: 爬虫">
-                    <i class="fa fa-angle-right"></i>
-                </a>
-                
-            
-        
-    </div>
 
-    <script>
-        var gitbook = gitbook || [];
-        gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"相关库介绍","level":"1.2","depth":1,"next":{"title":"爬虫","level":"1.3","depth":1,"path":"articles/spider/README.md","ref":"articles/spider/README.md","articles":[{"title":"抓取特定文本","level":"1.3.1","depth":2,"path":"articles/spider/text.md","ref":"articles/spider/text.md","articles":[]},{"title":"抓取图片并保存","level":"1.3.2","depth":2,"path":"articles/spider/image.md","ref":"articles/spider/image.md","articles":[]}]},"previous":{"title":"Graph The Rainbow","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"articles/modules/README.md","mtime":"2018-11-06T06:51:55.740Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-06T07:24:23.944Z"},"basePath":"../..","book":{"language":""}});
-        });
-    </script>
-</div>
+                
+                    <a rel="next" href="../../articles/spider/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
 
         
-    <script src="../../gitbook/gitbook.js"></script>
-    <script src="../../gitbook/theme.js"></script>
-    
+
         
-        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+
         
-    
+
         
-        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
         
-    
+
         
-        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+
         
-    
+        <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
         
-        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+
+        <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
         
-    
+
         
-        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
-        
-    
-        
-        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
-        
-    
 
     </body>
 </html>
-
